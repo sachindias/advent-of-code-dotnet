@@ -23,5 +23,6 @@ public class Program
         
         //Day 3
         D3_Tasks.Task1();
+        D3_Tasks.Task2();
     }
 }
