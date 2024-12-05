@@ -7,7 +7,7 @@ public class D2_Tasks
     public static List<List<int>> Task1()
     {
         string lines =
-            File.ReadAllText("C:/Users/dias01s/SafeDownloads/repos/advent-of-code/advent-of-code-2024/Day2/input.txt");
+            File.ReadAllText("C:/Users/dias01s/SafeDownloads/repos/advent-of-code-dotnet/advent-of-code-2024/Day2/input.txt");
 
         int count = 0;
         List<List<int>> LineArrays = new List<List<int>>();

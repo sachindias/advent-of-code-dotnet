@@ -2,6 +2,7 @@
 using Day1;
 using Day2;
 using Day3;
+using Day4;
 
 public class Program
 {
@@ -22,7 +23,12 @@ public class Program
         */
         
         //Day 3
+        /*
         D3_Tasks.Task1();
         D3_Tasks.Task2();
-    }
+        */
+        
+        //Day 4
+        D4_Tasks.Task1();
+  }
 }

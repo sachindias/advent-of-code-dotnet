@@ -7,7 +7,7 @@ public class D1_Tasks
 {
     public static (List<int>, List<int>) LoadData()
     {
-        string lines = File.ReadAllText("C:/Users/dias01s/SafeDownloads/repos/advent-of-code/advent-of-code-2024/Day1/input.txt");
+        string lines = File.ReadAllText("C:/Users/dias01s/SafeDownloads/repos/advent-of-code-dotnet/advent-of-code-2024/Day1/input.txt");
         List<int> columnOne = new List<int>();
         List<int> columnTwo = new List<int>();
         

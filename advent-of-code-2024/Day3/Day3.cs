@@ -10,7 +10,7 @@ public class D3_Tasks
     private static int TempMulLoc;
     public static void Task1()
     {
-        string[] lines = File.ReadAllLines("C:/Users/dias01s/SafeDownloads/repos/advent-of-code/advent-of-code-2024/Day3/input.txt");
+        string[] lines = File.ReadAllLines("C:/Users/dias01s/SafeDownloads/repos/advent-of-code-dotnet/advent-of-code-2024/Day3/input.txt");
 
         string linesTogether = "";
         
