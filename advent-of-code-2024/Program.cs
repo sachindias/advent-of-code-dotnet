@@ -30,5 +30,6 @@ public class Program
         
         //Day 4
         D4_Tasks.Task1();
+        D4_Tasks.Task2();
   }
 }

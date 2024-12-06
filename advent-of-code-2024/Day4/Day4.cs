@@ -11,8 +11,6 @@ public class D4_Tasks
             File.ReadAllLines(
                 "C:/Users/dias01s/SafeDownloads/repos/advent-of-code-dotnet/advent-of-code-2024/Day4/input.txt");
 
-        char[,] letterGrid = new char[lines.Length, lines[0].Length];
-
         int count = 0;
         for (int i = 0; i < lines.Length; i++)
         {
@@ -115,10 +113,75 @@ public class D4_Tasks
                 {
                     // ignored
                 }
-                
-                letterGrid[i, j] = lines[i][j];
             }
         }
         Console.WriteLine($"\nThe answer to Day 4, Task 1 is {count}");
     }
+
+    public static void Task2()
+    {
+        string[] lines =
+            File.ReadAllLines(
+                "C:/Users/dias01s/SafeDownloads/repos/advent-of-code-dotnet/advent-of-code-2024/Day4/input.txt");
+
+        int count = 0;
+        for (int i = 0; i < lines.Length; i++)
+        {
+            for (int j = 0; j < lines[i].Length; j++)
+            {
+
+                try
+                {
+                    if (lines[i][j] == 'A' && lines[i-1][j-1] == 'M' && lines[i-1][j+1] == 'S' && lines[i+1][j-1] == 'M' && lines[i+1][j+1] == 'S')
+                    {
+                        count++;
+                    }
+                }
+                catch (Exception e)
+                {
+                    // ignored
+                }
+                
+                try
+                {
+                    if (lines[i][j] == 'A' && lines[i-1][j-1] == 'S' && lines[i-1][j+1] == 'M' && lines[i+1][j-1] == 'S' && lines[i+1][j+1] == 'M')
+                    {
+                        count++;
+                    }
+                }
+                catch (Exception e)
+                {
+                    // ignored
+                }
+                
+                try
+                {
+                    if (lines[i][j] == 'A' && lines[i-1][j-1] == 'S' && lines[i-1][j+1] == 'S' && lines[i+1][j-1] == 'M' && lines[i+1][j+1] == 'M')
+                    {
+                        count++;
+                    }
+                }
+                catch (Exception e)
+                {
+                    // ignored
+                }
+                
+                try
+                {
+                    if (lines[i][j] == 'A' && lines[i-1][j-1] == 'M' && lines[i-1][j+1] == 'M' && lines[i+1][j-1] == 'S' && lines[i+1][j+1] == 'S')
+                    {
+                        count++;
+                    }
+                }
+                catch (Exception e)
+                {
+                    // ignored
+                }
+                
+            }
+        }
+        
+        Console.WriteLine($"\nThe answer to Day 4, Task 2 is {count}");
+    }
+
 }
