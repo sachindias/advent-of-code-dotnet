@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Linq;
 using Day1;
 using Day2;
 using Day3;
 using Day4;
 using Day5;
+using Day6;
 
 public class Program
 {
@@ -36,6 +38,9 @@ public class Program
         */
         
         //Day 5
-        D5_Tasks.Task1N2();
-  }
+        //D5_Tasks.Task1N2();
+        
+        //Day 6
+        D6_Tasks.Task1("input");
+    }
 }
